@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css" />
+    <title>Survey Form</title>
+  </header>
+  <body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description" class="established">To know about you</p>
+    <form action="phpfile.php" method="post">
+      <fieldset>
+        <label id="name-label"name="name" value="text">Name<input name="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label" name="email" value="text">Email<input name="email" type="email" placeholder="Enter your Email" required /></label>
+        <label id="number-label" name="age" value="text">Age <small>(optional)</small> <input name="age" type="number" min="10" max="99" placeholder="Age" /  ></label>
+        <label> Which option best describes your current role
+          <select id="dropdown" name="currentrole">
+            <option value="" name="currentrole">Select current role</option>
+            <option value="student" name="currentrole">Student</option>
+            <option value="job" name="currentrole">Full Time Job</option>
+            <option value="learner" name="currentrole">Full Time Learner</option>
+            <option value="notsay" name="currentrole">Prefer not to say</option>
+            <option value="other" name="currentrole">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Wants to continue in your current Role?</label>
+          <label><input type="radio" class="inline" name="opinion" value="definitely" checked /> Definitely</label>
+          <label><input type="radio" class="inline" name="opinion" value="maybe" /> Maybe</label>
+          <label><input type="radio" class="inline" name="opinion" value="notsure" /> Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label> What is your favorite place in the southindia?
+          <select id="dropdown2" name="place">
+            <option value="">Select an option</option>
+            <option value="andrapradesh" name="place">ANDRAPRADESH</option>
+            <option value="telangana" name="place">TELAGANA</option>
+            <option value="karnataka" name="place">KARNATAKA</option>
+            <option value="tamilnadu" name="place">TAMILNADU</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved? <small>(Check all that apply)</small> </label>
+        <label><input type="checkbox" class="inline" value="front-end-projects"  name="roles"/> Front-end Projects</label>
+        <label><input type="checkbox" class="inline" value="back-end-projects"name="roles" /> Back-end Projects</label>
+        <label><input type="checkbox" class="inline" value="data-visualization" name="roles" /> Data visualization</label>
+        <label><input type="checkbox" class="inline" value="challenges" name="roles" /> Challenges</label>
+        <label><input type="checkbox" class="inline" value="open-source-community" name="roles" /> Open Source Community</label>
+        <label><input type="checkbox" class="inline" value="gitter-help-rooms" name="roles" /> Gitter help rooms</label>
+        <label><input type="checkbox" class="inline" value="videos" name="roles" /> Videos</label>
+        <label><input type="checkbox" class="inline" value="city-meetups" name="roles" /> City Meetups</label>
+        <label><input type="checkbox" class="inline" value="wiki" name="roles" /> Wiki</label>
+        <label><input type="checkbox" class="inline" value="forum" name="roles" /> Forum</label>
+        <label><input type="checkbox" class="inline" value="additional-courses" name="roles" /> Additional Courses</label>
+      </fieldset>
+      <fieldset>
+        <label> Any comments or suggestions?
+          <textarea rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+       
+       <input type="submit" value="Submit" id="submit" /></label> 
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+
+
+
+

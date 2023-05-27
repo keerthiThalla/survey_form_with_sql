@@ -1,0 +1,46 @@
+.bg-container{
+    background-image: url("gradient-abstract-background-design_52683-70291.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 200px;
+    
+    
+}
+.main-heading{
+    font-family: Bree Serif;
+    text-align: text;
+    color: green;
+}
+.fcard{
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    height:350px;
+    margin: auto;
+    
+
+}
+.para{
+    text-align: center;
+    color: black;
+    font-family: Roboto;
+    font-size: 25px;
+}
+.button{
+    background-color: white;
+    height: 50px;
+    width: 220px;
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    border-radius: 25px;
+    background-color: blue;
+    font-size: 20px;
+}
+.image{
+    height: 80px;
+    width: 100px;
+    background-color: coral;
+}
